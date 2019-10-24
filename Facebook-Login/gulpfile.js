@@ -6,9 +6,8 @@ gulp.task('serve', function() {
     server: {
       baseDir: "./"
     },
-    proxy: "localhost:8080"
   });
   gulp.watch(['*.html', '*.css']).on('change', browserSync.reload);
 })
 
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));
