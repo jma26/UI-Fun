@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+hr {
+  margin: 24px 0px;
+}
+
 .top-container {
   background-color: #EDF0F5;
   width: 100%;
@@ -10,6 +14,72 @@
 }
 
 .top-content-container {
+  display: flex;
+  justify-content: center;
   max-width: 990px;
-  margin: 0 auto;
+  margin: auto;
+  padding-top: 88px;
+}
+
+
+.top-content-message {
+  padding-right: 32px;
+}
+
+.logo {
+  color: #1877F2;
+  padding-bottom: 24px;
+}
+
+.top-content-message p {
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
+.top-content-signup {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  border-radius: 8px;
+  background-color: #FFF;
+  margin-top: 32px;
+  padding: 12px 16px 24px 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid #DDDFE2;
+  border-radius: 8px;
+  margin: 8px 0px;
+  padding: 14px 16px;
+  min-width: 360px;
+}
+
+input[type="submit"] {
+  border-radius: 8px;
+  margin: 8px 0px;
+  padding: 14px 16px;
+  border: 1px solid #1877F2;
+  min-width: 360px;
+}
+
+.forgot-account-link {
+  margin-top: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.create-account-link {
+  background-color: #42B72A;
+  border-radius: 8px;
+  color: #FFF;
+  padding: 14px 16px;
+  border: 1px solid #42B72A;
+  max-width: 160px;
+  margin: auto;
 }
